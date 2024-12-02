@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans+Narrow:wght@400;700&display=swap');
+:root{
+    --cor-first: #000000;
+    --cor-second: #ffff00;
+    --cor-third: #ffffff;
+}
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+    background-color: var(--cor-first);
+    color: var(--cor-third);
+}
+header{
+    padding: 2% 0 0 15%;
+}
+nav{
+    display: flex;
+    gap: 80px;
+}
+.link_2{
+    color: var(--cor-second);
+    font-size: 2.5rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    border-bottom: solid 3px var(--cor-first);
+}
+
+.everything{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 3% 25% 4% 15%; /*Topo <-Direita Fundo Esquerda->*/
+    gap: 82px;
+}
+.content{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.title{
+    font-size: 4.375rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+strong{
+    color: var(--cor-second);
+}
+.paragrafe{
+    font-size: 2.5rem;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 32px;
+}
+.title_2{
+    font-size: 2.1875rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.links{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    text-align: center;
+    border: solid 2px var(--cor-second);
+    width: 50%;
+    font-size: 1.5rem;
+    padding: 21px 0px;
+    text-decoration: none;
+    color: var(--cor-third);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+a.links:hover{
+    background-color: gold;
+    color: var(--cor-first);
+    transition: 0.7s;
+}
+a.link_2:hover{
+    border-bottom: solid 3px red;
+    transition: 0.7s;
+}
+footer{
+    color: var(--cor-first);
+    background-color: var(--cor-second);
+    padding: 20px 20px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+@media (max-width:1200px){
+    .everything{
+        flex-direction: column-reverse;
+        padding: 3% 10% 4% 1%; /*Topo <-Direita Fundo Esquerda->*/
+    }
+    .content {
+        width: auto;
+    }
+}
+@media (max-width:750px){
+    .links{
+        font-size: 1.2rem;
+    }
+}
